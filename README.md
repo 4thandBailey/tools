@@ -294,7 +294,7 @@ MIT License — free to use, modify, and distribute. See [LICENSE](LICENSE) for 
 **4TH AND BAILEY | Information Technology Consulting**
 Enterprise IT Consulting · Microsoft CSP · Houston, TX · Nationwide
 
-- [Microsoft Solutions](https://www.4thandbailey.com/services/microsoft-solutions)
+- [Microsoft Solutions](https://4nb.cloud/cloud-solution-provider)
 - [Start a Conversation](https://www.4thandbailey.com/contact)
 - [Website](https://www.4thandbailey.com)
 - [LinkedIn](https://www.linkedin.com/company/4thandbailey)
