@@ -1,6 +1,15 @@
-# 4th and Bailey — Microsoft 365 PowerShell Tools
+![4th and Bailey — Microsoft 365 PowerShell Tools | Houston, TX](./assets/banner.jpg)
 
-**Free, open-source Microsoft 365 administration tools built on the Microsoft Graph API.**
+# 4th and Bailey — Microsoft 365 PowerShell Tools | Houston, TX
+
+Practical Microsoft 365 administration scripts for IT Directors,
+Microsoft 365 administrators, and organizations managing M365 environments.
+Built by 4th and Bailey — a Microsoft Cloud Solution Provider (CSP)
+headquartered in Houston, TX.
+
+Scripts cover MFA compliance reporting, inactive user detection,
+license optimization, mailbox statistics, and group membership auditing —
+all via Microsoft Graph API v1.0 with no beta endpoints.
 
 [![PowerShell](https://img.shields.io/badge/PowerShell-7.0%2B-blue?logo=powershell)](https://github.com/PowerShell/PowerShell)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell)
@@ -23,6 +32,22 @@ Every script is:
 - **Read-only** — no write, modify, or delete operations
 - **HTML report ready** — branded, client-deliverable output via `-HtmlReport`
 - **App-only and delegated auth** — supports both interactive and unattended execution
+
+---
+
+## Why We Built These Tools
+
+Every Microsoft 365 engagement begins with understanding the current state of the tenant. Before we can recommend anything — whether that is a licensing optimization, a security posture improvement, or a governance framework — we need accurate data.
+
+These scripts answer the questions we ask in every engagement:
+
+- **Who has MFA enabled — and who does not?** (`Get-MFAStatusReport`)
+- **Which licensed users have not signed in for 60 or 90 days?** (`Get-InactiveUserReport`)
+- **How many license seats are unused or misallocated?** (`Get-LicenseAssignmentReport`)
+- **How large are mailboxes, and who has not been active?** (`Get-MailboxStatisticsReport`)
+- **What do group memberships actually look like across the tenant?** (`Get-GroupMembershipReport`)
+
+We use these tools in our Microsoft 365 assessments, infrastructure governance reviews, and client onboarding. We open-sourced them because good tools should be shared.
 
 ---
 
@@ -102,7 +127,7 @@ Create an App Registration in Entra ID with the required permissions for each sc
 
 ## Tool Reference
 
-### 1. Get-MailboxStatisticsReport.ps1
+## 1. Get-MailboxStatisticsReport.ps1
 
 Generates a mailbox statistics report using the Graph Reports API. Shows storage usage, item count, deleted item count, and last activity date for every mailbox. Sorted by storage descending — largest mailboxes first.
 
@@ -122,7 +147,7 @@ Generates a mailbox statistics report using the Graph Reports API. Shows storage
 
 ---
 
-### 2. Get-LicenseAssignmentReport.ps1
+## 2. Get-LicenseAssignmentReport.ps1
 
 Per-user license assignment report with tenant SKU inventory. Shows every user's assigned licenses, account status, and last sign-in. The SKU inventory table shows total, used, and available seats across all subscribed plans — useful for identifying over-licensed or under-utilized SKUs.
 
@@ -142,7 +167,7 @@ Per-user license assignment report with tenant SKU inventory. Shows every user's
 
 ---
 
-### 3. Get-InactiveUserReport.ps1
+## 3. Get-InactiveUserReport.ps1
 
 Identifies users with no sign-in activity beyond a configurable threshold (30, 60, or 90 days). Highlights licensed accounts that are inactive — the most common source of M365 license waste. Requires Entra ID P1 or P2 for `signInActivity` data.
 
@@ -162,7 +187,7 @@ Identifies users with no sign-in activity beyond a configurable threshold (30, 6
 
 ---
 
-### 4. Get-GroupMembershipReport.ps1
+## 4. Get-GroupMembershipReport.ps1
 
 Exports all groups and their members to a flat CSV where each row is a group-member pair. The HTML report renders each group as a card with its members in a table — significantly more readable than a flat list for presentation to clients or leadership.
 
@@ -185,7 +210,7 @@ Exports all groups and their members to a flat CSV where each row is a group-mem
 
 ---
 
-### 5. Get-MFAStatusReport.ps1
+## 5. Get-MFAStatusReport.ps1
 
 Per-user MFA status and registered authentication methods. Classifies users as:
 
@@ -267,15 +292,13 @@ MIT License — free to use, modify, and distribute. See [LICENSE](LICENSE) for 
 ## About 4th and Bailey
 
 **4TH AND BAILEY | Information Technology Consulting**
-**4thandbailey.com — Where IT Works**
-
 Enterprise IT Consulting · Microsoft CSP · Houston, TX · Nationwide
 
-- [Website](https://4thandbailey.com)
+- [Microsoft Solutions](https://www.4thandbailey.com/services/microsoft-solutions)
+- [Start a Conversation](https://www.4thandbailey.com/contact)
+- [Website](https://www.4thandbailey.com)
 - [LinkedIn](https://www.linkedin.com/company/4thandbailey)
 - [GitHub](https://github.com/4thandbailey)
 - [(888) 305-5977](tel:+18883055977)
 
 *Boutique firm. Enterprise standards. Principal-led on every engagement.*
-
-> **4TH AND BAILEY | Information Technology Consulting (4thandbailey.com) — Where IT Works**
