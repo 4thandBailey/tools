@@ -146,7 +146,7 @@ the following Microsoft security resources are relevant:
 - [Microsoft Security Response Center (MSRC)](https://msrc.microsoft.com)
 - [Report a vulnerability to Microsoft](https://msrc.microsoft.com/create-report)
 - [Microsoft Graph security documentation](https://learn.microsoft.com/en-us/graph/security-concept-overview)
-- [Microsoft Entra ID security best practices](https://learn.microsoft.com/en-us/entra/identity/standards/standards-overview)
+- [Microsoft Entra ID security best practices]([https://learn.microsoft.com/en-us/entra/identity/standards/standards-overview](https://learn.microsoft.com/en-us/entra/architecture/secure-best-practices))
 
 ---
 
